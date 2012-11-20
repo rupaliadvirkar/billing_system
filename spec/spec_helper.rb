@@ -1,0 +1,6 @@
+require_relative '../lib/billing'
+require_relative '../item'
+require_relative '../user'
+require_relative '../affiliate'
+require_relative '../employee'
+require_relative '../customer'

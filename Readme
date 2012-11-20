@@ -1,0 +1,23 @@
+========================Pre-requisites====================
+
+1. ruby -v 1.9.3p194
+
+2. rspec -v 2.12.0 (Please perform gem install rspec..incase machine do not have rspec)
+
+===================To run the test cases===================
+
+1. Go to the particular directory path
+2. run command rspec
+
+===================To run the program===================
+
+1. Go to the particular directory path
+2. run commands individually    			
+	1.ruby billing_system_utility.rb customer
+
+	2.ruby billing_system_utility.rb customer 12/12/2009
+
+	3.ruby billing_system_utility.rb employee
+
+	4.ruby billing_system_utility.rb affiliate			  
+
