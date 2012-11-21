@@ -9,11 +9,16 @@ describe Employee do
     @items << Item.new('NG',500)
     @items << Item.new('G', 750)
     @items << Item.new('misc',145)
+    @employee = Employee.new()
   end 	
-  before (:each) do
-  	@employee = Employee.new()
-  end  	
-  it "should retrun net payable amount for the bill" do
-  	@employee.net_amount_payable(@items).should == 1334.5
+  
+  describe "#net_amount_payable(@items)" do
+    context "when valid" do
+      specify{@employee.net_amount_payable(@items).should == 1334.5}
+      specify{@employee.net_amount_payable([]).should == 0.0}
+    end
+    context "when invalid" do      
+      specify{lambda{@employee.net_amount_payable(nil)}.should raise_error}
+    end
   end
 end
